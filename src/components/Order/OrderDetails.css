@@ -1,0 +1,42 @@
+.order-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 170px;
+    height: 57px;
+    border-width: 1px;
+    align-items: center;
+}
+.order-details p {
+    display: flex;
+    width: 56px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24.76px;
+    border: #D9D9D9 solid 1px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.order-details .increment-button, .order-details .decrement-button {
+    display: flex;
+    width: 57px;
+    height: 57px;
+    background: #FDC913;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.76px;
+    letter-spacing: 0%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.order-details .increment-button{
+    border-radius: 0 6px 6px 0;
+}
+.order-details .decrement-button {
+    border-radius: 6px 0 0 6px;
+}

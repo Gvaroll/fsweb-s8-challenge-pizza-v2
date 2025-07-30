@@ -1,0 +1,28 @@
+    .order-extras-container {
+        width: 524;
+        height: 214;
+        opacity: 1;
+        gap: 13px;
+
+    }
+        .form-title {
+        font-family: Barlow;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24.76px;
+        margin: 0;
+    }
+    .form-subtitle {
+        font-family: Barlow;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 56px;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .ingredients-checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+    }

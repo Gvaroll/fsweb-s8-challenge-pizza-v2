@@ -1,0 +1,26 @@
+
+
+.form-title-size{
+    margin-bottom: 20px;
+}
+.form-title-dough{
+    margin-bottom: 12px ;
+}
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.form-dough {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.dough-select {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #292929;
+}

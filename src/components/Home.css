@@ -1,0 +1,56 @@
+.home-header {
+  width: 1920px;
+  height: 1080px;
+  background-image: url("/images/iteration-1-images/home-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.header-content {
+  padding: 56px;
+  justify-content: center;
+}
+.header-content h1 {
+  color:#FDC913;
+  font-size: 32px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 44.27px;
+  margin: 2rem 0 0rem;
+}
+.header-content p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 86px;
+  line-height: 92px;
+  letter-spacing: 1.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.header-content .btn {
+    background-color: #FDC913;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    height: 56px;
+    width: 193.27px;
+    margin-top: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media (max-width: 540px) {
+  .home-header {
+    width: 540px;
+  }
+  .header-content h1 {
+    display: none;
+  }
+}
