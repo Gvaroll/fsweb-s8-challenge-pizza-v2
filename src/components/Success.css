@@ -19,6 +19,20 @@
     color: #FFFFFF;
     margin-top: 266px;
 }
+.order-summary {
+    width: 202px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: Barlow;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24.76px;
+    color: #FFFFFF;
+}
+.order-summary p {
+    margin: 13px 0 0;
+}
 @media (max-width: 540px) {
     .success-header {
         width: 540px;

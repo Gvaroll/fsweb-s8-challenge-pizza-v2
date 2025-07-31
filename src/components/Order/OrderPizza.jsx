@@ -5,9 +5,7 @@ import OrderHeader from './OrderHeader';
 import OrderBody from './OrderBody';
 
 
-export default function OrderPizza() {
-
-  const [siparisAdeti, setSiparisAdeti] = useState(0);
+export default function OrderPizza(  {siparisBoyutu, setSiparisBoyutu, hamurTipi, setHamurTipi, selectedIngredients, setSelectedIngredients }  ) {
 
 
     return (
@@ -16,7 +14,14 @@ export default function OrderPizza() {
         <OrderHeader/>
         <main className="order-main">
             <OrderMainHeader/>
-            <OrderBody/>            
+            <OrderBody
+              siparisBoyutu={siparisBoyutu}
+              setSiparisBoyutu={setSiparisBoyutu}
+              hamurTipi={hamurTipi}
+              setHamurTipi={setHamurTipi}
+              selectedIngredients={selectedIngredients}
+              setSelectedIngredients={setSelectedIngredients}
+            />            
        </main>
     </div>
 

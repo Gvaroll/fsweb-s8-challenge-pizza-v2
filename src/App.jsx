@@ -9,8 +9,12 @@ import Success from './components/Success';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
-  const [count, setCount] = useState(0);
   const history = useHistory();
+  const [siparisBoyutu, setSiparisBoyutu] = useState('');
+  const [hamurTipi, setHamurTipi] = useState('');
+  const [selectedIngredients, setSelectedIngredients] = useState([]);
+  const [error, setError] = useState({});
+
 
   return (
     <Router>
@@ -18,9 +22,40 @@ function App() {
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
-        <Route path="/orderpizza" component={OrderPizza} />
+        <Route
+          path="/orderpizza"
+          render={(props) => (
+            <OrderPizza
+              {...props}
+              selectedIngredients={selectedIngredients}
+              setSelectedIngredients={setSelectedIngredients}
+              siparisBoyutu={siparisBoyutu}
+              setSiparisBoyutu={setSiparisBoyutu}
+              hamurTipi={hamurTipi}
+              setHamurTipi={setHamurTipi}
+              error={error}
+              setError={setError}
+            />
+  )}
+/>
+
         <Route path="/home" component={Home} />
-        <Route path="/success" component={Success} />
+        <Route 
+        path="/success" 
+          render={(props) => (
+          <Success
+            {...props}
+            selectedIngredients={selectedIngredients}
+            setSelectedIngredients={setSelectedIngredients}
+            siparisBoyutu={siparisBoyutu}
+            setSiparisBoyutu={setSiparisBoyutu}
+            hamurTipi={hamurTipi}
+            setHamurTipi={setHamurTipi}
+            error={error}
+            setError={setError}/>
+        )}
+        />
+
       </Switch>
     </Router>
   );

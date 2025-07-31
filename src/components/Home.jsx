@@ -1,7 +1,17 @@
 import React from 'react';
 import './Home.css';
+import { useHistory } from 'react-router-dom';
+
+
 
 export default function Home() {
+
+const history = useHistory();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    history.push('/orderpizza');
+  }
     return (
       <header className="home-header">
         <div className="header-content">
@@ -10,7 +20,7 @@ export default function Home() {
           <p>KOD ACIKTIRIR <br/>
             Pizza, DOYURUR
           </p>
-          <button className="btn">ACIKTIM</button>
+          <button className="btn" onClick={handleClick}>ACIKTIM</button>
         </div>
       </header>
     );
