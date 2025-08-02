@@ -11,20 +11,40 @@
     width:362px;
 }
 .success-header h1 {
+
+    letter-spacing: 1.5px;
+    margin: 70px 0 10px ;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FDC913;
+}
+hr{
+    width: 532px;
+    margin: 50px 0 20px;
+}
+.siparis-name {
+    color: #FFFFFF;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+.success-header .siparis {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 300;
     font-size: 86px;
     line-height: 92px;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 266px;
+    margin: 0;
 }
 .order-summary {
     width: 202px;
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-family: Barlow;
+    font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24.76px;
@@ -41,8 +61,6 @@
     .success-header h1 {
         font-size: 72px;
         margin-top: 220px;
-
-
     }
     
 }

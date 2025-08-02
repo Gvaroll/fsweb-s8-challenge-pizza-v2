@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import workintech from '/workintech.svg';
+import "./reset.css";
 import './App.css';
+
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import OrderPizza from './components/Order/OrderPizza';
 import Home from './components/Home';

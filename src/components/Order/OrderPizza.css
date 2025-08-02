@@ -135,40 +135,9 @@
         color: #5F5F5F;
         opacity: 1;
     }
-    .order-extras, .total-price-container {
-        display: flex;
-        justify-content: space-between;
-        font-family: Barlow ,sans-serif;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24.76px;
-        color: #5F5F5F;
-    }
-    .total-price-container{
-        color: #CE2829;
-    }
-    .order-price-box {
-        display: flex;
-        margin: 42px 50px 0px;
-        flex-direction: column;
-    }
-    .order-price-title {
-        display: flex;
-        font-family: Barlow,sans-serif;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24.76px;
-        margin: 0;
-        color: #292929;
-    }
-    .order-price-button {
-        display: flex;
-        width: 100%;
-        height: 62px;
-        margin-top: 13px;
-        background: #FDC913;
-        justify-content: center;
-    }
+  
+
+    
     @media (max-width: 540px) {
         .order-main{
             margin: 0 auto;

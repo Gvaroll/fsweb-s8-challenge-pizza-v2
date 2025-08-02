@@ -1,0 +1,39 @@
+.order-price-box {
+    display: flex;
+    margin: 56.5px 50px 0px;
+    flex-direction: column;
+    border: 1px solid #E5E5E5;
+    width: 350px;
+    height: 197px;
+    border-radius: 6px;
+}
+.order-price-header {
+    display: flex;
+    font-family: "Barlow",sans-serif;
+    font-weight: 600;
+    padding: 42px 49px;
+    flex-direction: column;
+    width: 252.54638671875px;
+    color: #FFFFFF;
+}
+.order-price-title {
+    display: flex;
+    font-size: 20px;
+    line-height: 24.76px;
+    margin-bottom: 22px;
+}
+.order-extras, .total-price-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        line-height: 24.76px;
+        margin-bottom: 12px;
+    }
+.order-price-button {
+        display: flex;
+        width: 100%;
+        height: 62px;
+        margin-top: 13px;
+        background: #FDC913;
+        justify-content: center;
+    }

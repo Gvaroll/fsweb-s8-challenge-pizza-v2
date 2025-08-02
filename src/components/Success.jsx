@@ -6,16 +6,16 @@ export default function Success({ siparisAdeti, setSiparisAdeti ,siparisBoyutu, 
     return (
       <header className="success-header">
         <img src="images\iteration-1-images\logo.svg" alt=""/>
-        <h1>TEBRİKLER! <br>
-        </br>SİPARİŞİNİZ ALINDI!</h1>
-        <p>Position Absolute Acı Pizza</p>
+        <h1>lezzetin yolda </h1>
+        <p className='siparis'>SİPARİŞ ALINDI </p>
+        <hr />
+        <p className='siparis-name'>Position Absolute Acı Pizza</p>
         <div className='order-summary'>
-          <p>Boyut: {siparisBoyutu} </p>
-          <p>Hamur: {hamurTipi}</p>
-          <p>Ek Malzemeler: {selectedIngredients.join(', ')}</p>
+          <p>Boyut: <span style={{ fontWeight: "700" }}>{siparisBoyutu}</span> </p>
+          <p>Hamur:  <span style={{ fontWeight: "700" }}>{hamurTipi}</span> </p>
+          <p>Ek Malzemeler: <span style={{ fontWeight: "700" }}>{selectedIngredients.join(', ')}</span> </p>
         </div>
         <OrderPriceBox
-          handleOrderSubmit={handleOrderSubmit}
           siparisAdeti={siparisAdeti}
           selectedIngredients={selectedIngredients}
         />
