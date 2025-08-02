@@ -37,6 +37,7 @@ export default function OrderSizeContainer( { siparisBoyutu, setSiparisBoyutu, h
                         htmlFor="pizza-type"
                         name="pizza-type"
                         value="Small"
+                        data-cy="pizza-size-small"
                         onChange={handleSizeChange}
                         />
                         Küçük
@@ -48,8 +49,8 @@ export default function OrderSizeContainer( { siparisBoyutu, setSiparisBoyutu, h
                         htmlFor="pizza-type"
                         name="pizza-type"
                         value="Medium"
-                        onChange={handleSizeChange}
-/>
+                        data-cy="pizza-size-medium"
+                        onChange={handleSizeChange}/>
                         Orta
                     </label>
 
@@ -59,6 +60,7 @@ export default function OrderSizeContainer( { siparisBoyutu, setSiparisBoyutu, h
                         htmlFor="pizza-type"
                         name="pizza-type"
                         value="Large"
+                        data-cy="pizza-size-large"
                         onChange={handleSizeChange}                        
                         />
                         Büyük
@@ -74,13 +76,20 @@ export default function OrderSizeContainer( { siparisBoyutu, setSiparisBoyutu, h
                 onChange={handleDoughChange}
                 >
                     <option value="" disabled>Hamur Kalınlığı</option>
-                    <option value="İnce">İnce</option>
-                    <option value="Normal" >Normal</option>
-                    <option value="Kalın">Kalın</option>
+                    <option 
+                    value="İnce"
+                    data-cy="pizza-dough-thin"
+                    >İnce</option>
+                    <option 
+                    value="Normal" 
+                    data-cy="pizza-dough-normal"
+                    >Normal</option>
+                    <option 
+                    value="Kalın"
+                    data-cy="pizza-dough-normal"
+                    >Kalın</option>
                 </select>
             </div>
-            {error.siparisBoyutu && <p className='error-message'>{error.siparisBoyutu}</p>}
-            {error.hamurTipi && <p className='error-message'>{error.hamurTipi}</p>}
         </form>
  
     )

@@ -5,7 +5,7 @@ import OrderHeader from './OrderHeader';
 import OrderBody from './OrderBody';
 
 
-export default function OrderPizza(  {siparisBoyutu, setSiparisBoyutu, hamurTipi, setHamurTipi, selectedIngredients, setSelectedIngredients }  ) {
+export default function OrderPizza( {siparisBoyutu, setSiparisBoyutu, hamurTipi, setHamurTipi, selectedIngredients, setSelectedIngredients, siparisAdeti,setSiparisAdeti }  ) {
 
 
     return (
@@ -21,6 +21,8 @@ export default function OrderPizza(  {siparisBoyutu, setSiparisBoyutu, hamurTipi
               setHamurTipi={setHamurTipi}
               selectedIngredients={selectedIngredients}
               setSelectedIngredients={setSelectedIngredients}
+              siparisAdeti={siparisAdeti}
+              setSiparisAdeti={setSiparisAdeti}
             />            
        </main>
     </div>

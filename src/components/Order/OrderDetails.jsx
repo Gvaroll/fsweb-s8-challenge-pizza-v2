@@ -20,7 +20,9 @@ export default function OrderDetails({siparisAdeti, setSiparisAdeti}) {
                 e.preventDefault();
                 setSiparisAdeti(siparisAdeti + 1);
             }}
-        className='increment-button'>+</button>
+        className='increment-button'
+        data-cy="increment-button"
+        >+</button>
     </div>
  
     )

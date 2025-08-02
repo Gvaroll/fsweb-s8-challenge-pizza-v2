@@ -165,10 +165,10 @@ export default function OrderExtrasContainer( { selectedIngredients, setSelected
                         <input
                         type="checkbox"
                         name="ingredients"
-                        checked={isChecked("Sucuk")}
+                        checked={isChecked("Mantar")}
                         onChange={handleCheckboxChange}
-                        value="Sucuk"/>
-                        Sucuk
+                        value="Mantar"/>
+                        Mantar
                     </label>
                 </div>
 

@@ -5,7 +5,7 @@ import OrderNotesContainer from "./OrderNotesContainer";
 import OrderSummaryContainer from "./OrderSummaryContainer"
 import './OrderBody.css';
 
-export default function OrderBody(  { siparisBoyutu, setSiparisBoyutu, hamurTipi, setHamurTipi, selectedIngredients, setSelectedIngredients } ) {
+export default function OrderBody(  { siparisAdeti,setSiparisAdeti,siparisBoyutu, setSiparisBoyutu, hamurTipi, setHamurTipi, selectedIngredients, setSelectedIngredients } ) {
 
 
 
@@ -31,6 +31,8 @@ export default function OrderBody(  { siparisBoyutu, setSiparisBoyutu, hamurTipi
                 siparisBoyutu={siparisBoyutu}
                 hamurTipi={hamurTipi}
                 selectedIngredients={selectedIngredients}
+                siparisAdeti={siparisAdeti}
+                setSiparisAdeti={setSiparisAdeti}
                 />
             </div>
     )
